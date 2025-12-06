@@ -117,8 +117,6 @@ Ambos comandos deben mostrar mensajes de éxito.
 
 ## Equipo
 
-**Backend Lead:** Derling R.
-
 **Grupo 3 - UAPA**
 
 ## Sprint 1 - Entregables
