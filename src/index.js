@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import expedientesRoutes from './routes/expedientes.routes.js';
+import fichasRoutes from './routes/fichas.routes.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -28,6 +29,7 @@ app.get('/health', (req, res) => {
 });
 
 app.use('/api/expedientes', expedientesRoutes);
+app.use('/api/fichas', fichasRoutes);
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
