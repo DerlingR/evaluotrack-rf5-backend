@@ -99,6 +99,27 @@ npm run test:db          # Probar conexión a la base de datos
 npm run test:postgis     # Validar funcionamiento de PostGIS
 ```
 
+## API REST
+
+El servidor expone una API REST completa para gestionar expedientes, fichas catastrales y anexos.
+
+**Iniciar servidor:**
+```bash
+npm start        # Producción
+npm run dev      # Desarrollo (con hot-reload)
+```
+
+**Endpoints principales:**
+
+- `POST /api/expedientes` - Crear expediente
+- `GET /api/expedientes` - Listar expedientes (con paginación)
+- `GET /api/expedientes/:id` - Obtener expediente
+- `PUT /api/expedientes/:id` - Actualizar expediente
+- `DELETE /api/expedientes/:id` - Eliminar expediente
+
+Ver documentación completa en [docs/API.md](docs/API.md)
+
+
 ## Verificación de Instalación
 
 Después de instalar, ejecuta:
@@ -114,6 +135,7 @@ Ambos comandos deben mostrar mensajes de éxito.
 - [Guía de Configuración Completa](docs/Configuraciones.md)
 - [Estructura de Base de Datos](docs/DATABASE.md)
 - [Configuración de Supabase](docs/SUPABASE.md)
+- [API REST - Endpoints](docs/API.md)
 
 ## Equipo
     
